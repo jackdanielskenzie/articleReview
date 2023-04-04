@@ -1,0 +1,176 @@
+/* 
+CSS - Cascading Style Sheets
+Describing presentation of web pages
+Colors, layout, fonts; decided using a set of "rules"
+"Responsive" - Look good at any size
+
+Styles
+
+Selectors
+
+Rule : Styles + Selectors
+
+TEXT PROPERTIES
+color: Controls the text color within an element
+line-height: Controls height of a line of text
+text-align: "left","right","center","justify"
+
+
+BOX PROPERTIES
+
+POSITIONING PROPERTIES
+
+*/
+
+/*SELECTOR*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #DDE0E3;
+    border: 5px solid #e90000;
+}
+
+h1 {
+    padding: 50px;
+}
+
+p {
+    padding: 20px 0 20px 10px;
+}
+
+em, strong {
+    background-color: #B2D6ff;
+}
+
+body {
+    font-family:sans-serif;
+    font-size:large;
+}
+
+/* RELATIVE LENGTH UNITS*/
+/*
+%: Percentage of Parent Element
+em: Relative to font size "M"
+rem: "Root Em" <html>
+vw: "Viewport Width" 1% of total Viewport Width 1024px: 1vw = 10.24px
+vh: "Viewport Height"
+
+/* ID SELECTORS */
+/* id="" */
+#startParagraph {
+    font: italic bold 44px Helvetica, Arial, sans-serif;
+    color: rgb(92, 92, 211);
+}
+
+#section1 {
+    padding: .5em;
+    margin: 10px;
+    font-size: 40px;
+    background-color: pink;
+}
+
+#section2 {
+    font-size: 20px;
+    background-color: cyan;
+}
+
+/* CLASS SELECTORS */
+/* class="" */
+
+.bigBlue {
+    color:white;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.underInfo {
+    border: 5px solid #2e4ab8
+}
+
+.box {
+    border: 2px solid rgb(110, 211, 128);
+}
+
+.halfSize {
+    font-size: 50%;
+}
+
+.pageTitle {
+    text-transform: lowercase;
+    background-color: none;
+}
+
+.box {
+    background:     lightgray;
+}
+
+.highlighted {
+    color: rgb(37, 123, 236);
+}
+
+/* INLINE vs. BLOCK */
+/*
+display: block, inline, grid, flex, table, none
+
+INLINE CAVEATS
+inline elements IGNORE 'height' property (line-height)
+inline elements IGNORE 'width' property (margin, padding)
+inline elements CANNOT contain Block elements
+*/
+
+/* NORMAL FLOW */
+/* STATIC FLOW */
+/* NATURAL FLOW */
+
+/* BLOCK ELEMENTS */
+
+/* CSS BOX MODEL */
+/*
+content - whatever we want to display
+padding - the space between the box's content and its border
+borders - the line between the box's padding and its margin
+margins
+block boxes
+inline boxes
+*/
+
+/* MARGINS v. PADDING */
+/*
+padding has background, margin is transparent
+padding is included in the "Click area" of an element while margins arent
+margins collapse vertically, while padding doesn't
+
+INLINE BOXES COMPLETELY IGNORE THE TOP AND BOTTOM MARGINS OF AN ELEMENT
+
+VERTICAL MARGIN COLLAPSE
+
+ALIGNING BLOCKS 
+
+auto-margins :center alignment
+floats: left/right alignment
+flexbox: complete control of alignment
+text-align: WILL NOT SAVE YOU HERE
+
+
+Everything is a box
+Boxes can be inline or block-level
+Boxes have content, padding, borders, and margins
+The rules about how they interact sometimes seem arbitrary
+But, if you master the box model, you can lay out pretty much any website you can imagine.
+
+
+UNITS
+rem vs. em
+em is relative to the current element's font size
+rem is relative to the ROOT elements font size
